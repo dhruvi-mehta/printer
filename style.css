@@ -1,0 +1,133 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+	--color-background: #d8e3e7;
+	--color-primary: #51c4d3;
+	--color-secondary: #126e82;
+	--color-text: #132c33;
+}
+
+html {
+	box-sizing: border-box;
+	color: var(--color-text);
+	font-family: "Neue Kabel", sans-serif;
+	font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+    font-family:'Ubuntu'; 
+	background-color: var(--color-background);
+	animation: gradient 30s ease infinite;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: top center;
+	height: 100%;
+	padding: 2.5% 7%;
+	overflow: visible;
+    padding-top:100px
+
+}
+
+.flow > * + * {
+	margin-top: 1em;
+}
+
+input[type="text"] {
+	display: block;
+	border: 0;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 1rem;
+	border-radius: 4px;
+}
+
+.title {
+	font-size: 40px;
+	color: black;
+	text-align: center;
+	font-family: 'Ubuntu'
+}
+
+
+.wrapper {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	margin-top: -50px;
+	font-family: 'Ubuntu'
+}
+
+#word-form {
+	z-index: 1;
+}
+
+input {
+	margin-top: 50px;
+	padding: 9px;
+	border-color: blue;
+	font-family: 'Neue Kabel';
+	font-size: 15px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+.text {
+	font-size: 100px;
+	text-align: center;
+	font-family: 'Neue Kabel';
+	color: white;
+	margin-top: 240px;
+
+}
+
+ button {
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Neue Kabel;
+  max-width: 50vh;
+  margin: 10px;
+  border-radius: 30px;
+  margin-top:0px;
+}
+
+#button-container {
+	text-align: right;
+
+}
