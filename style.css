@@ -66,13 +66,22 @@ input[type="text"] {
 	border-radius: 4px;
 }
 
-.title {
+h3 {
 	font-size: 40px;
 	color: black;
 	text-align: center;
 	font-family: 'Ubuntu'
 }
 
+
+h6 {
+	font-size:15px;
+	color:black;
+	font-weight:normal;
+	padding-top:-50px;
+	text-align:center;
+	padding-top:-100px;
+}
 
 .wrapper {
 	font-size: 20px;
@@ -103,14 +112,14 @@ input {
 }
 
 
-.text {
+/* .text {
 	font-size: 100px;
 	text-align: center;
 	font-family: 'Neue Kabel';
 	color: white;
 	margin-top: 240px;
 
-}
+} */
 
  button {
   border: none;

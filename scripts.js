@@ -1,36 +1,36 @@
 const GRADIENT_MAP = [
 	{
 		letters: ["q", "w", "e"],
-		color: "#ffd973"
-		// src = 'mand-02.svg'
+		color: "#A9DBC7"
 	},
 	{
 		letters: ["r", "t", "y"],
-		color: "#f08080"
+		color: "#FEDBB2"
+		
 	},
 	{
 		letters: ["u", "i", "o","p"],
-		color: "#e13759"
+		color: "#8C9DCF"
 	},
 	{
 		letters: ["a", "s", "d"],
-		color: "#fcbdc7"
+		color: "#E8ACBD"
 	},
 	{
 		letters: ["f", "g", "h"],
-		color: "#c9e9fd"
+		color: "#89C5D3"
 	},
 	{
 		letters: ["j", "k", "l"],
-		color: "#2f4599"
+		color: "#DDFEDD"
 	},
 	{
 		letters: ["z", "s", "c"],
-		color: "#cc76cc"
+		color: "#E1CCE8"
 	},
 	{
 		letters: ["v", "b","n","m"],
-		color: "#8b008b"
+		color: "#6AA3CF"
 	},
 
 ];
@@ -62,40 +62,3 @@ function wordToGradient(word) {
 	});
 	return `linear-gradient(90deg, ${colors.join(", ")})`;
 }
-
-
-	// document.onmousemove = animatedCircles;
-
-	// 		const colors = ['#00CED1', '#8B008B', '#FF00FF'];
-
-	// 		function animatedCircles(event) {
-	// 			let circle = document.createElement('div');
-	// 			circle.setAttribute('class', 'circle');
-	// 			document.body.appendChild(circle);
-
-	// 			circle.style.left = event.clientX + 'px';
-	// 			circle.style.top = event.clientY + 'px';
-	// 			circle.style.zIndex = "1";
-
-	// 			let color = colors[Math.floor(Math.random() * colors.length)];
-	// 			circle.style.borderColor = color;
-
-	// 			circle.style.transition = 'all 0.5s linear 0s';
-
-	// 			circle.style.left = circle.offsetLeft - 20 + 'px';
-	// 			circle.style.top = circle.offsetTop - 20 + 'px';
-
-	// 			circle.style.width = '50px';
-	// 			circle.style.height = '50px';
-	// 			circle.style.borderWidth = '5px';
-	// 			circle.style.opacity = 0;
-	// 		}
-
- // function showOrHideDiv() {
- //      var v = document.getElementById("showOrHide");
- //      if (v.style.display === "none") {
- //         v.style.display = "block";
- //      } else {
- //         v.style.display = "none";
- //      }
- //   }
