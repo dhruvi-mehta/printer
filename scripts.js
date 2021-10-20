@@ -62,3 +62,55 @@ function wordToGradient(word) {
 	});
 	return `linear-gradient(90deg, ${colors.join(", ")})`;
 }
+
+
+let canvas = document.querySelector("#canvas");
+
+canvas.addEventListener("click", function (event) {
+
+  console.log("clicking the canvas"); 
+  let art = new Array('images/PATTERNS-01.png',
+                      'images/PATTERNS-02.png',
+                      'images/PATTERNS-03.png', 
+                      'images/PATTERNS-04.png',
+                      'images/PATTERNS-05.png',
+                      'images/PATTERNS-06.png',
+					  'images/PATTERNS-07.png', 
+					  'images/PATTERNS-08.png', 
+					  'images/PATTERNS-09.png', 
+					  'images/PATTERNS-10.png', 
+
+                		); 
+
+  let currentArt = art[Math.floor(Math.random() * art.length)];
+  var divsize = 100;
+
+  var posx = (Math.random() * window.innerWidth - divsize).toFixed();
+  var posy = (Math.random() * window.innerHeight - divsize).toFixed();
+
+  imgArray = new Image();
+  imgArray.classList.add("imgArray");
+  imgArray.src = currentArt;
+  
+//   imgArray.style.left = posx + "px";
+//   imgArray.style.top = posy + "px";
+  imgArray.style.position = "fixed";
+  imgArray.style.width = Math.floor((Math.random()*180)+2000)+"px";
+  canvas.appendChild(imgArray);
+
+  let shuffleButton = document.querySelector(".shuffle");
+  shuffleButton.addEventListener("click", function (event) {
+    console.log("clicking the suffle button");
+  
+    Array.from(document.querySelectorAll('.imgArray')).forEach(function(img) {
+        
+      var posx = (Math.random() * window.innerWidth - divsize).toFixed();
+      var posy = (Math.random() * window.innerHeight - divsize).toFixed();
+    
+      img.style.left = posx + "px"; 
+      img.style.top = posy + "px";
+  
+  })
+
+   });
+})

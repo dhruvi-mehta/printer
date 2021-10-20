@@ -66,11 +66,17 @@ input[type="text"] {
 	border-radius: 4px;
 }
 
+.title {
+	z-index: 7;
+}
+
 h3 {
 	font-size: 40px;
 	color: black;
 	text-align: center;
-	font-family: 'Ubuntu'
+	font-family: 'Ubuntu';
+	z-index:4;
+	
 }
 
 
@@ -81,6 +87,7 @@ h6 {
 	padding-top:-50px;
 	text-align:center;
 	padding-top:-100px;
+	z-index: 7;
 }
 
 .wrapper {
@@ -92,7 +99,7 @@ h6 {
 }
 
 #word-form {
-	z-index: 1;
+	z-index: 7;
 }
 
 input {
@@ -138,5 +145,51 @@ input {
 
 #button-container {
 	text-align: right;
+
+}
+
+img {
+	transition: transform 0.7s ease-in-out;
+	/* animation-duration: 5s; */
+	/* animation-name: fade; */
+	animation: fade 5s normal forwards;
+	animation-delay: 10s;
+  }
+  
+  @keyframes fade {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+
+.clear {
+	display: inline-block;
+	position: fixed;
+	bottom: 50px;
+	left: 30px;
+	z-index: 100;
+	cursor: pointer;
+  }
+
+.shuffle {
+  display: inline-block;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#canvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index:inherit;
+
 
 }
